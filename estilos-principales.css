@@ -1,3 +1,236 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
+h1 {
+  font-family: "Rampart One", cursive;
+  font-size: 2rem;
+}
+
+header {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
+  overflow: hidden;
+}
+header .contenedor {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-width: 14vw;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+header .dark-mode {
+  left: 30vw;
+}
+header .switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+header .switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+header .switch.active {
+  background: rgb(255, 230, 0);
+  color: #000;
+}
+header .switch.active::after {
+  right: 0;
+  left: unset;
+}
+header .switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.contenedor-hero {
+  overflow: hidden;
+}
+.contenedor-hero .hero {
+  height: 50vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./5c1f927ed605c-wallpaper-preview.jpg);
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contenedor-hero .hero:hover {
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vh 0vh;
+}
+.search .contenedor-busqueda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.search .sort-container {
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.search .search-inner-container {
+  flex: 1;
+}
+.search .search-inner-container .filtro-tipo {
+  padding: 0vw 3vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.search .search-inner-container .filtro-tipo #buscar-tipo {
+  margin-right: 1vw;
+}
+.search .search-inner-container .filtro-orden {
+  padding: 0vw 3vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.search .search-inner-container .filtro-orden #buscar-orden {
+  margin-right: 1vw;
+}
+.search .search-inner-container .boton-busqueda {
+  border-radius: 10px;
+  border-width: 0.5px;
+  height: 3vh;
+  width: 10vw;
+}
+
+.resultado-busqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.resultado-busqueda .titulo-resultado {
+  margin-bottom: 3vh;
+}
+.resultado-busqueda .resultados-imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+}
+.resultado-busqueda .resultados-imagenes .comic {
+  background-color: aqua;
+  margin: 10px;
+  min-width: 20vw;
+  min-height: 20vh;
+}
+.resultado-busqueda .botones-paginas {
+  display: flex;
+  justify-content: center;
+  margin: 0px 3px;
+}
+.resultado-busqueda .botones-paginas .tamaño-boton-paginas {
+  height: 5vh;
+  width: 5vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.resultado-busqueda .botones-paginas .tamaño-boton-paginas:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+footer {
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-ada {
+  color: white;
+}
+
+.column {
+  background-color: #fafafa;
+  color: black;
+}
+
+.modo-oscuro {
+  background-color: rgb(28, 28, 30);
+  color: #fafafa;
+}
+.modo-oscuro h2 {
+  color: white;
+}
+.modo-oscuro .search {
+  background-color: rgb(28, 28, 30);
+}
+.modo-oscuro .texto-oscuro {
+  color: white;
+}
+.modo-oscuro .resultados-imagenes {
+  background-color: rgb(28, 28, 30);
+}
+.modo-oscuro .resultados-imagenes .column {
+  background-color: rgb(28, 28, 30);
+}
+
+.resultado-busqueda-filtrada {
+  height: 80vh;
+  width: 100vw;
+  background-color: tomato;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.resultado-busqueda-filtrada .imagen-filtrado {
+  background-color: azure;
+  width: 40vw;
+  height: 70vh;
+}
+.resultado-busqueda-filtrada .informacion-filtrado {
+  background-color: cornflowerblue;
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+content-header {
+  display: inline-flex;
+  column-gap: 10px;
+}
 
 /*# sourceMappingURL=estilos-principales.css.map */

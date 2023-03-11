@@ -1,0 +1,17 @@
+.contenedor-hero{
+    overflow: hidden;
+    .hero {
+        height: 50vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(./5c1f927ed605c-wallpaper-preview.jpg);
+        margin: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .hero:hover{
+        transform: scale(1.2);
+        transition-duration: 0.8s;
+        }
+}

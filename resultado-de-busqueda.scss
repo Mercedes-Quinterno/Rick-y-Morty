@@ -1,0 +1,22 @@
+.resultado-busqueda-filtrada{
+    height: 80vh;
+    width: 100vw;
+    background-color: tomato;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    .imagen-filtrado{
+        background-color: azure;
+        width: 40vw;
+        height: 70vh ;
+    }
+    
+    .informacion-filtrado{
+        background-color: cornflowerblue;
+        width: 40vw;
+        height: 70vh ;
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,26 @@
+
+.column{
+    background-color: #fafafa;
+    color: black;
+}
+
+.modo-oscuro {
+    background-color: rgb(28, 28, 30);
+    color: #fafafa;
+    h2{
+        color: white;
+    }
+    .search{
+        background-color: rgb(28, 28, 30);
+    }
+    .texto-oscuro{
+        color: white;
+    }
+    .resultados-imagenes {
+        background-color: rgb(28, 28, 30);
+
+        .column {
+            background-color: rgb(28, 28, 30);
+        }
+    }
+}

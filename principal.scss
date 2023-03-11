@@ -1,0 +1,48 @@
+.resultado-busqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+    .titulo-resultado{
+        margin-bottom: 3vh;
+    }
+
+    .resultados-imagenes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+        
+        .comic{
+            background-color: aqua;
+            margin: 10px;
+            min-width: 20vw;
+            min-height: 20vh;
+        
+        
+        }
+        
+        
+        }
+        .botones-paginas{
+            display: flex;
+            justify-content: center;
+            margin: 0px 3px;
+            .tamaño-boton-paginas{
+                height: 5vh;
+                width: 5vw;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            .tamaño-boton-paginas:hover{
+                transform: scale(1.5);
+                transition: 0.3s;
+            }
+        }
+
+}
+
+
