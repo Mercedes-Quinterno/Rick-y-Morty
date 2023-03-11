@@ -29,13 +29,6 @@ const anteriorPagina= $(".pagina-anterior")
 const siguientePagina = $(".pagina-siguiente")
 const ultimaPagina = $(".pagina-ultima")
 
-/*Filtrados posible*/
-const filtrado ={
-    "orden-alfabetico": (filtro) => ordenarAlfabeticamente(filtro, 'DESC'),
-	"orden-alfabetico-invertido": (filtro) => ordenarAlfabeticamente(filtro, 'ASC'),
-
-}
-
 
 /*Modo Oscuro*/
 const botonModoOscuro= $("#dark")
