@@ -2,3 +2,22 @@ content-header {
     display: inline-flex;
     column-gap: 10px;
 }
+
+
+
+.card{
+    padding: 10px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 20px 5px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
