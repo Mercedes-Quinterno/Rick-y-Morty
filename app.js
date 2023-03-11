@@ -178,11 +178,11 @@ const construirCardDePersonaje = ({id, name, gender, image, species, status}) =>
     cardContent.classList.add('card-content');
 
     const nameElement = document.createElement('div');
-    nameElement.textContent = name;
+    nameElement.textContent = `${name}`;
     const speciesElement = document.createElement('div');
-    speciesElement.textContent = `- ${species}`;
+    speciesElement.textContent = `Especie: ${species}`;
     const genderElement = document.createElement('div');
-    genderElement.textContent = `- ${gender}`;
+    genderElement.textContent = `Género: ${gender}`;
     
     const statusElement = document.createElement('div');
     statusElement.textContent = `- ${status}`;
